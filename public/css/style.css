@@ -1,0 +1,22 @@
+/* h5 css to display msg in navbar */
+.custom-h5{
+    margin: auto;
+}
+/* end */
+
+/* popup css */
+.popup .content {
+    position: fixed;
+    width: 350px;
+    height: 300px;
+    margin-left: 30%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: #c2cdd3;
+    display: none;
+}
+.viewDetails{
+    cursor: pointer;
+}
+/* end */

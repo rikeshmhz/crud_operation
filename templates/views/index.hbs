@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headers}}
+</head>
+
+<body>
+    {{>navbar successData=success errorData=err}}
+    <div class="container mt-5 w-50">
+        <main class="form-signin w-100 m-auto">
+            <form action="/register/addregister" method="POST">
+                <h1 class="text-center mb-3">Register</h1>
+                <div class="form-floating mb-2">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="FirstName" name="firstname">
+                    <label for="floatingInput">First Name</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="LastName"
+                        name="lastname">
+                    <label for="floatingPassword">Last Name</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Address" name="address">
+                    <label for="floatingInput">Address</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="Phone" name="phone">
+                    <label for="floatingInput">Phone</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <span>Gender:</span>
+                    <input type="radio" name="gender" value="Male" checked>
+                    <span>Male</span>
+                    <input type="radio" name="gender" value="Female">
+                    <span>Female</span>
+                </div>
+                <button class="btn btn-primary w-100 py-2" type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

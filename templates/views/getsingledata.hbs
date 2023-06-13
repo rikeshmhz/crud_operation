@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headers}}
+</head>
+
+<body>
+    {{>navbar}} 
+
+    <div class="container mt-5 w-50">
+        <main class="form-signin w-100 m-auto">
+                <h1 class="text-center mb-3">Updata User</h1>
+                <form method="POST" id="update_user">
+                <input type="hidden" name="id" value={{user._id}}>
+                <div class="form-floating mb-2">
+                    <input type="text" class="form-control" id="floatingInput" value={{user.first_name}} name="firstname">
+                    <label for="floatingInput">First Name</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="text" class="form-control" id="floatingPassword" value={{user.last_name}}
+                        name="lastname">
+                    <label for="floatingPassword">Last Name</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="text" class="form-control" id="floatingInput" value={{user.address}} name="address">
+                    <label for="floatingInput">Address</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="number" class="form-control" id="floatingInput" value={{user.phone}} name="phone">
+                    <label for="floatingInput">Phone</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <span>Gender:</span>
+                    <input type="radio" name="gender" value="Male" checked>
+                    <span>Male</span>
+                    <input type="radio" name="gender" value="Female">
+                    <span>Female</span>
+                </div>
+                <button class="btn btn-warning w-100 py-2" type="submit">Update</button>
+                </form>
+        </main>
+    </div>
+</body>
+<script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="js/jQuery.js"></script>
+
+</html>
